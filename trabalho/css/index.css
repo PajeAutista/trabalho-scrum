@@ -1,0 +1,86 @@
+.btns {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.efeito{
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 400ms ease;
+}
+
+.animaçao1{
+  background: rgb(8, 40, 184);
+}
+
+.animaçao1:hover{
+  background: rgba(0,0,0,0);
+  color: rgb(8, 40, 184);
+  box-shadow: inset 0 0 0  3px  rgb(8, 40, 184);
+
+}
+
+.animaçao2{
+  background: rgb(255, 0, 0);
+}
+
+.animaçao2:hover{
+  background: rgba(0,0,0,0);
+  color: rgb(255, 0, 0);
+  box-shadow: inset 0 0 0  3px  rgb(255, 0, 0);
+
+}
+
+.animaçao3{
+  background: rgb(43, 255, 0);
+}
+
+.animaçao3:hover{
+  background: rgba(0,0,0,0);
+  color: rgb(43, 255, 0);
+  box-shadow: inset 0 0 0  3px   rgb(43, 255, 0);
+
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(http://joxi.ru/Y2L38JoS7glNWm.svg);
+  background-size: auto;
+  color: #fff;
+}
+
+h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #5433ff, #20bdff, aqua ,aqua, #5433ff);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: clip 1.5s linear infinite;
+}
+
+@keyframes clip {
+  to{
+    background-position: 200% center;
+  }
+}
