@@ -7,30 +7,39 @@
 
 <body>
 
-        <h1>Conversor de temperatura</h1>
+    <h1>Conversor de temperatura</h1>
 
-    <form name="convert">
+    <form class = "temp" name="convert">
 
-        Fahrenheit:
+        <font color="greenyellow">  Fahrenheit: </font> 
 
         <input type="text" name="ftemp" size="7" onchange="convertTemp('ftoc')">
 
-        Celsius:
+        <font color="greenyellow"> Celsius: </font>
 
         <input type="text" name="ctemp" size="7" onchange="convertTemp('ctof')">
 
-        Kelvin:
+        <font color="greenyellow"> Kelvin: </font>
 
         <input type="text" name="ktemp" size="7" onchange="convertTemp('ktof')">
 
-        <br/><br/>
+        <br /><br />
 
         <input id="limpar" type="button" value="limpar" onclick="clearAll();">
 
     </form>
 
-    
+    <div class = "btns">
+        <form method="get" action="index.html">
+
+            <button type="submit" class="efeito animaçao1">Voltar</button>
+
+        </form>
+    </div>
+
+
 
     <script type="text/javascript" src="js/temperatura.js"></script>
 </body>
+
 </html>
