@@ -1,6 +1,5 @@
 form{
-    border: 1px double blue; 
-    background-color: #DDF;
+    margin-top: 50px;
     padding: 4px; 
     text-align:center;
     width: 500px;
@@ -15,4 +14,16 @@ form{
         color-stop(0, rgb(44, 225, 238)),
         color-stop(0.85, rgb(44, 225, 238))
     );
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
 }
