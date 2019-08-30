@@ -1,0 +1,18 @@
+form{
+    border: 1px double blue; 
+    background-color: #DDF;
+    padding: 4px; 
+    text-align:center;
+    width: 500px;
+    margin-left: 32.5em;
+}
+
+#limpar:hover{
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(44, 225, 238)),
+        color-stop(0.85, rgb(44, 225, 238))
+    );
+}

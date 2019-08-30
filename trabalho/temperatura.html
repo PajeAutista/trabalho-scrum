@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Conversor </title>
+    <link rel="stylesheet" href="css/temperatura.css">
+</head>
+
+<body>
+    <form name="convert">
+
+        Fahrenheit:
+
+        <input type="text" name="ftemp" size="7" onchange="convertTemp('ftoc')">
+
+        Celsius:
+
+        <input type="text" name="ctemp" size="7" onchange="convertTemp('ctof')">
+
+        Kelvin:
+
+        <input type="text" name="ktemp" size="7" onchange="convertTemp('ktof')">
+
+        <br/><br/>
+
+        <input id="limpar" type="button" value="limpar" onclick="clearAll();">
+
+    </form>
+
+    <script type="text/javascript" src="js/temperatura.js"></script>
+</body>
+</html>
