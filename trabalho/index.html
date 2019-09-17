@@ -2,45 +2,66 @@
 <html lang="pt-br">
 
 <head>
-  <title>Ferraz</title>
-
   <link rel="stylesheet" href="css/index.css">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+
 <body>
-  <h1>Ferraz</h1>
-  <canvas id=c></canvas>
-  <div class="btns">
+  <div class="w3-container w3-black"><!--topo da pagina-->
+    <h2>Ferraz</h2>
+  </div>
+  <div class="w3-container"><!--abas-->
+    <div class="w3-row">
+      <a href="javascript:void(0)" onclick="openCity(event, 'Conversor');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Conversor</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openCity(event, 'Espelho');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Espelho</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openCity(event, 'Breve');">
+        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Breve</div>
+      </a>
+    </div>
 
-    <form method="get" action="temperatura.html">
+    <div id="Conversor" class="w3-container city" style="display:none">
+      <h2>Conversor de temperaturas</h2>
+      <form class="temp" name="convert">
 
-    <button type="submit" class="efeito animaçao1">Temperatura</button>
+        Fahrenheit: 
 
-    </form>
+        <input type="text" name="ftemp" size="7" onchange="convertTemp('ftoc')">
 
-    <div class="btns">
+        Celsius:
 
-      <!-- <form method="get" action="./geografia.html"> -->
-  
-      <button type="submit" class="efeito animaçao2">Espelho</button>
-  
+        <input type="text" name="ctemp" size="7" onchange="convertTemp('ctof')">
+
+        Kelvin:
+
+        <input type="text" name="ktemp" size="7" onchange="convertTemp('ktof')">
+
+        <br /><br />
+
+        <input id="limpar" type="button" value="limpar" onclick="clearAll();">
+
       </form>
+    </div>
 
-      <div class="btns">
+    <div id="Espelho" class="w3-container city" style="display:none">
+      <h2>Espelho</h2>
+      <p>Em Breve</p>
+    </div>
 
-        <!-- <form method="get" action="./geografia.html"> -->
-    
-        <button type="submit" class="efeito animaçao3">potencia</button>
-    
-        </form>
+    <div id="Breve" class="w3-container city" style="display:none">
+      <h2>Breve</h2>
+      <p>Em Breve</p>
+    </div>
 
   </div>
-
-
-
 </body>
-
 <script src="js/menu.js"></script>
 
 </html>
