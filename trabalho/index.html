@@ -11,10 +11,12 @@
 
 
 <body>
-  <div class="w3-container w3-black"><!--topo da pagina-->
+  <div class="w3-container w3-black">
+    <!--topo da pagina-->
     <h2>Ferraz</h2>
   </div>
-  <div class="w3-container"><!--abas-->
+  <div class="w3-container">
+    <!--abas-->
     <div class="w3-row">
       <a href="javascript:void(0)" onclick="openCity(event, 'Conversor');">
         <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Conversor</div>
@@ -27,27 +29,27 @@
       </a>
     </div>
 
-    <div id="Conversor" class="w3-container city" style="display:none">
-      <h2>Conversor de temperaturas</h2>
-      <form class="temp" name="convert">
+    <div id="Conversor" class="w3-container city w3-center" style="display:none">
+        <h2>Conversor de temperaturas</h2><br>
+        <form class="temp" name="convert">
 
-        Fahrenheit: 
+          Fahrenheit:
 
-        <input type="text" name="ftemp" size="7" onchange="convertTemp('ftoc')">
+          <input class="inputcolor" type="text" name="ftemp" size="7" onchange="convertTemp('ftoc')">
 
-        Celsius:
+         Celsius:
 
-        <input type="text" name="ctemp" size="7" onchange="convertTemp('ctof')">
+          <input class="inputcolor" type="text" name="ctemp" size="7" onchange="convertTemp('ctof')">
 
-        Kelvin:
+          Kelvin:
 
-        <input type="text" name="ktemp" size="7" onchange="convertTemp('ktof')">
+          <input class="inputcolor"type="text" name="ktemp" size="7" onchange="convertTemp('ktof')">
 
-        <br /><br />
+          <br /><br />
 
-        <input id="limpar" type="button" value="limpar" onclick="clearAll();">
+          <input class="w3-button w3-teal" id="limpar" type="button" value="limpar" onclick="clearAll();">
 
-      </form>
+        </form>
     </div>
 
     <div id="Espelho" class="w3-container city" style="display:none">

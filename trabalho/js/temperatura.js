@@ -6,10 +6,14 @@ function convertTemp(direction) {
         cObj.value = Math.round((fObj.value - 32) * (5 / 9));
         kObj.value = Math.round(((fObj.value - 32) * (5 / 9)) + (273.15));
     }
-    else if (direction == "ktof") {
-        fObj.value = Math.round((kObj.value - 273.15) * (9 / 5)) + 32;
-        cObj.value = Math.round((fObj.value - 32) * (5 / 9));
-
+    else if (direction == "ktof") {//NAO TA FUNCIONADO ARRUMA ESSA MERDA
+        if (kObj.value > 0) {//NAO TA FUNCIONADO ARRUMA ESSA MERDA
+            alert("negativo")//NAO TA FUNCIONADO ARRUMA ESSA MERDA
+        }else 
+        {
+            fObj.value = Math.round((kObj.value - 273.15) * (9 / 5)) + 32;
+            cObj.value = Math.round((fObj.value - 32) * (5 / 9));
+        }
     }
     else {
         fObj.value = Math.round((parseInt(cObj.value) * (9 / 5)) + 32);
